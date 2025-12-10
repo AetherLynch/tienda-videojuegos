@@ -4,70 +4,70 @@ const games = [
     title: "The Legend of Zelda: Breath of the Wild", 
     price: 1200,
     description: "Un mundo abierto lleno de aventuras, exploración y libertad total.",
-    image: "images/zelda.jpg"
+    image: "imagenes/zelda.jpg"
   },
   { 
     id: 2, 
     title: "Super Mario Odyssey", 
     price: 900,
     description: "Acompaña a Mario a explorar reinos increíbles en una aventura divertida y colorida.",
-    image: "images/mario.jpg"
+    image: "imagenes/mario.jpg"
   },
   { 
     id: 3, 
     title: "God of War", 
     price: 1100,
     description: "Kratos regresa con una historia más madura y combates espectaculares.",
-    image: "images/gow.jpg"
+    image: "imagenes/gow.jpg"
   },
   { 
     id: 4, 
     title: "Red Dead Redemption 2", 
     price: 1300,
     description: "Un western con narrativa profunda y un mundo abierto lleno de detalles.",
-    image: "images/rdr2.jpg"
+    image: "imagenes/rdr2.jpg"
   },
   { 
     id: 5, 
     title: "Minecraft", 
     price: 600,
     description: "Crea, construye y explora mundos infinitos llenos de creatividad.",
-    image: "images/minecraft.jpg"
+    image: "imagenes/minecraft.jpg"
   },
   { 
     id: 6, 
     title: "Clair Obscure: Expedition 33", 
     price: 1200,
     description: "Un RPG artístico con combates estratégicos y una historia misteriosa.",
-    image: "images/clair.jpg"
+    image: "imagenes/clair.jpg"
   },
   { 
     id: 7, 
     title: "Elden Ring", 
     price: 1400,
     description: "Un desafiante mundo abierto creado por FromSoftware.",
-    image: "images/eldenring.jpg"
+    image: "imagenes/eldenring.jpg"
   },
   { 
     id: 8, 
     title: "FIFA 24", 
     price: 1000,
     description: "El simulador de futbol más popular, con equipos y ligas actualizadas.",
-    image: "images/fifa.jpg"
+    image: "imagenes/fifa.jpg"
   },
   { 
     id: 9, 
     title: "Call of Duty: Modern Warfare II", 
     price: 1300,
     description: "Acción intensa con una campaña épica y multijugador competitivo.",
-    image: "images/cod.jpg"
+    image: "imagenes/cod.jpg"
   },
   { 
     id: 10, 
     title: "Hollow Knight", 
     price: 500,
     description: "Un metroidvania hermoso y desafiante con un estilo artístico único.",
-    image: "images/hollowknight.jpg"
+    image: "imagenes/hollowknight.jpg"
   }
 ];
 
