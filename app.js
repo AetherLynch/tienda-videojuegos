@@ -88,4 +88,40 @@ function renderGames() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", renderGames);
+let cart = [];
+
+function renderCart() {
+  const cartItemsDiv = document.getElementById("cart-items");
+  const cartTotalP = document.getElementById("cart-total");
+
+  cartItemsDiv.innerHTML = "";
+
+  if (cart.length === 0) {
+    cartItemsDiv.innerHTML = "<p>El carrito está vacío.</p>";
+    cartTotalP.textContent = "Total: $0 MXN";
+    return;
+  }
+
+  let total = 0;
+
+  cart.forEach(item => {
+    const div = document.createElement("div");
+    div.classList.add("cart-item");
+
+    const subtotal = item.price * item.quantity;
+    total += subtotal;
+
+    div.innerHTML = `
+      <p>${item.title} (x${item.quantity}) - $${subtotal} MXN</p>
+    `;
+
+    cartItemsDiv.appendChild(div);
+  });
+
+  cartTotalP.textContent = `Total: $${total} MXN`;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  renderGames();
+  renderCart(); // para que muestre "El carrito está vacío" al inicio
+});
