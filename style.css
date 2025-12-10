@@ -12,7 +12,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-
 header {
   text-align: center;
   padding: 1.5rem;
@@ -30,15 +29,31 @@ section {
   background-color: #111827;
 }
 
+/* --- NUEVO ESTILO PROFESIONAL PARA EL GRID --- */
 #game-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
 }
 
+/* --- TARJETAS DE JUEGOS ACTUALIZADAS --- */
 .game-item {
-  border: 1px solid #374151;
-  padding: 0.75rem;
-  border-radius: 8px;
-  background-color: #1f2937;
+  border: 1px solid #2563eb;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #1e3a8a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: #f1f5f9;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* --- TÍTULO DE CADA TARJETA --- */
+.game-item h3 {
+  margin-top: 0.5rem;
+  color: #93c5fd;
 }
