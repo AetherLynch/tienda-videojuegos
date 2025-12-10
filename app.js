@@ -83,12 +83,37 @@ function renderGames() {
       <h3>${game.title}</h3>
       <p>Precio: $${game.price} MXN</p>
       <p>${game.description}</p>
+      <button class="add-to-cart-btn" data-id="${game.id}">Agregar al carrito</button>
     `;
     gameList.appendChild(div);
   });
+
+  // Asignar eventos a los botones de "Agregar al carrito"
+  const buttons = document.querySelectorAll(".add-to-cart-btn");
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const id = parseInt(btn.getAttribute("data-id"));
+      addToCart(id);
+    });
+  });
 }
 
+
 let cart = [];
+
+function addToCart(gameId) {
+  const game = games.find(g => g.id === gameId);
+  if (!game) return;
+
+  const existing = cart.find(item => item.id === gameId);
+  if (existing) {
+    existing.quantity += 1;
+  } else {
+    cart.push({ ...game, quantity: 1 });
+  }
+
+  renderCart();
+}
 
 function renderCart() {
   const cartItemsDiv = document.getElementById("cart-items");
@@ -121,7 +146,23 @@ function renderCart() {
   cartTotalP.textContent = `Total: $${total} MXN`;
 }
 
+function checkout() {
+  if (cart.length === 0) {
+    alert("El carrito está vacío. Agrega algún juego antes de comprar.");
+    return;
+  }
+
+  alert("¡Compra simulada con éxito! Gracias por tu compra.");
+  cart = [];
+  renderCart();
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   renderGames();
-  renderCart(); // para que muestre "El carrito está vacío" al inicio
+  renderCart();
+
+  const checkoutBtn = document.getElementById("checkout-btn");
+  if (checkoutBtn) {
+    checkoutBtn.addEventListener("click", checkout);
+  }
 });
