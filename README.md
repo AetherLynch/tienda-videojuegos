@@ -6,7 +6,7 @@ Este proyecto es una pequeña tienda de videojuegos creada con **HTML**, **CSS**
 
 ---
 
-## 📦 Características del proyecto
+## Características del proyecto
 
 - Catálogo de videojuegos dinámico generado con JavaScript.
 - Cada juego muestra:
@@ -22,27 +22,6 @@ Este proyecto es una pequeña tienda de videojuegos creada con **HTML**, **CSS**
 ## Estructura del proyecto
 
 /images
-
-zelda.jpg
-
-mario.jpg
-
-gow.jpg
-
-rdr2.jpg
-
-minecraft.jpg
-
-clair.jpg
-
-eldenring.jpg
-
-fifa.jpg
-
-cod.jpg
-
-hollowknight.jpg
-
 app.js
 index.html
 style.css
@@ -77,15 +56,6 @@ git clone <url-del-repo>
 - Puedes abrir directamente **index.html**
 - O usar una extensión como **Live Server** en VS Code
 
----
 
-## Próximas mejoras (opcional)
-
-- Implementar un carrito de compras  
-- Agregar filtrado o buscador  
-- Añadir categorías de juegos  
-- Crear página de detalle del producto  
-
----
 
 Proyecto realizado con fines educativos para la materia de Desarrollo Web Integral.
