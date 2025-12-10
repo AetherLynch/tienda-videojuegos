@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+header {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #1f2937;
+}
+
+main {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
+section {
+  flex: 1;
+  background-color: #111827;
+}
+
+#game-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.game-item {
+  border: 1px solid #374151;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background-color: #1f2937;
+}
