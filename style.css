@@ -5,6 +5,14 @@ body {
   color: #f9fafb;
 }
 
+.game-img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+
 header {
   text-align: center;
   padding: 1.5rem;
